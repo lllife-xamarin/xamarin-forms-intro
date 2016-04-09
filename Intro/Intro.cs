@@ -8,7 +8,7 @@ namespace Intro
 	{
 		public App ()
 		{
-			MainPage = new NavigationPage (new CustomListViewExample());
+			MainPage = new NavigationPage (new CustomListViewCellExample());
 		}
 
 		protected override void OnStart ()
