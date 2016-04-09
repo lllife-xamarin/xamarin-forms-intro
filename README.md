@@ -193,7 +193,7 @@ public class Customer {
 }
 ```
 
-![](screen/custome-cell.png)
+![](screen/custom-cell.png)
 
 #### Link
 
