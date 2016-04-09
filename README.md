@@ -1,6 +1,6 @@
 #### สร้าง Solution
 
-- New -> Solution -> Multiplatform -> Xamarin.Forms -> Forms App (C#) -> `Intro`
+- `New -> Solution -> Multiplatform -> Xamarin.Forms -> Forms App (C#) -> Intro`
 
 ####  เขียน `ContentPage`
 
