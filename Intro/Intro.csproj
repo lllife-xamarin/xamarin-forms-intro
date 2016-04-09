@@ -35,7 +35,7 @@
     <Compile Include="StackLayoutExample.cs" />
     <Compile Include="ListViewExample.cs" />
     <Compile Include="CustomListViewExample.cs" />
-    <Compile Include="CustomListViewCell.cs" />
+    <Compile Include="CustomListViewCellExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

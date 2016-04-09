@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Intro.CustomCellXaml">
+	<ContentPage.Content>
+		<ListView x:Name="listView">
+			<ListView.ItemTemplate>
+				<DateTemplate>
+					<ViewCell>
+						<ViewCell.View>
+							<StackLayout Orientation="Horizontal">
+								<Image Source="{Biding ImageUri}" WidthRequest="40" HeightRequest="40"/>
+								<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+									<Label Text="{Biding DisplayName}" HorizontalOptions="FillAndExpand"/>
+									<Label Text="{Biding Twitter}" Font="{x:Static constants:Fonts.Twitter}"/>
+								</StackLayout>
+								</StackLayout>
+							</StackLayout>
+						</ViewCell.View>
+					</ViewCell>
+				</DateTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>
