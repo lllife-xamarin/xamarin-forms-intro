@@ -8,16 +8,7 @@ namespace Intro
 	{
 		public App ()
 		{
-			// The root page of your application
-			var content = new ContentPage {
-				Content = new Label {
-					Text = "Hello, Form!",
-					VerticalOptions = LayoutOptions.CenterAndExpand,
-					HorizontalOptions = LayoutOptions.CenterAndExpand
-				}
-			};
-
-			MainPage = new NavigationPage (new StackLayoutExample());
+			MainPage = new NavigationPage (new CustomListViewExample());
 		}
 
 		protected override void OnStart ()

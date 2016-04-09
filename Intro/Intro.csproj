@@ -33,6 +33,8 @@
     <Compile Include="Intro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StackLayoutExample.cs" />
+    <Compile Include="ListViewExample.cs" />
+    <Compile Include="CustomListViewExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

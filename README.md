@@ -52,6 +52,59 @@ Content = new StackLayout {
 };
 ```
 
+#### สร้าง `ListView` ด้วย `C#`
+
+- `New` -> `File` -> `Empty class` -> `ListViewExample.cs`
+
+```csharp
+public class ListViewExample: ContentPage {
+    public ListViewExample () {
+        var listView = new ListView ();
+        listView.ItemsSource = new string [] {
+            "Buy pears", "Buy oranges", "Buy mangos", "Buy apples", "Buy bananas"
+        };
+
+        Content = new StackLayout {
+            Children = { listView }
+        };
+    }
+}
+```
+
+#### สร้าง `CustomListView` ด้วย `C#`
+
+- `New` -> `File` -> `Empty class` -> `CustomListViewExample.cs`
+
+```csharp
+public class CustomListViewExample: ContentPage {
+    public CustomListViewExample () {
+        var listView = new ListView ();
+        listView.ItemsSource = new TodoItem [] {
+            new TodoItem { Name = "Buy pears" },
+            new TodoItem { Name = "Buy oranges", Done=true} ,
+            new TodoItem { Name = "Buy mangos" },
+            new TodoItem { Name = "Buy apples", Done=true },
+            new TodoItem { Name = "Buy bananas", Done=true }
+        };
+        listView.ItemTemplate = new DataTemplate (typeof (TextCell));
+        listView.ItemTemplate.SetBinding (TextCell.TextProperty, "Name");
+        listView.ItemSelected += async (s, e) => {
+            var todoItem = (TodoItem)e.SelectedItem;
+            await DisplayAlert ("Tapped!", todoItem.Name + " was tapped.", "OK");
+        };
+
+        Content = new StackLayout {
+            Children = { listView }
+        };
+    }
+}
+
+class TodoItem {
+    public string Name { set; get; }
+    public bool Done { set; get; }
+}
+```
+
 #### Link
 
 - https://developer.xamarin.com/guides/xamarin-forms/getting-started/introduction-to-xamarin-forms
