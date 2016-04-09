@@ -1,10 +1,10 @@
 #### สร้าง Solution
 
-- `New` -> `Solution` -> `Multiplatform` -> `Xamarin.Forms` -> `Forms App (C#)` -> `Intro`
+- New -> Solution -> Multiplatform -> Xamarin.Forms -> Forms App (C#) -> `Intro`
 
 ####  เขียน `ContentPage` ด้วย `C#`
 
-- `New` -> `File` -> `Empty class` -> `StackLayoutExample.cs`
+- New -> File -> Empty class -> `StackLayoutExample.cs`
 
 ```csharp
 public class StackLayoutExample : ContentPage {
@@ -54,7 +54,7 @@ Content = new StackLayout {
 
 #### สร้าง `ListView` ด้วย `C#`
 
-- `New` -> `File` -> `Empty class` -> `ListViewExample.cs`
+- New -> File -> Empty class -> `ListViewExample.cs`
 
 ```csharp
 public class ListViewExample: ContentPage {
@@ -73,7 +73,7 @@ public class ListViewExample: ContentPage {
 
 #### สร้าง `CustomListView` ด้วย `C#`
 
-- `New` -> `File` -> `Empty class` -> `CustomListViewExample.cs`
+- New -> File -> Empty class -> `CustomListViewExample.cs`
 
 ```csharp
 public class CustomListViewExample: ContentPage {
