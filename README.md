@@ -1,10 +1,10 @@
 #### สร้าง Solution
 
-- `Multiplatform` -> `Xamarin.Forms` -> `Forms App (C#/F#)`
+- `New` -> `Solution` -> `Multiplatform` -> `Xamarin.Forms` -> `Forms App (C#)` -> `Intro`
 
 ####  เขียน `ContentPage` ด้วย `C#`
 
-- ไฟล์ `StackLayoutExample.cs`
+- `New` -> `File` -> `Empty class` -> `StackLayoutExample.cs`
 
 ```csharp
 public class StackLayoutExample : ContentPage {
@@ -38,6 +38,18 @@ public class App : Application {
         MainPage = new NavigationPage (new StackLayoutExample());
     }
 }
+```
+
+#### สามารถปรับ Layout ใน `StackLayout` ดังนี้
+
+```csharp
+Content = new StackLayout {
+    Spacing = 10,
+    VerticalOptions = LayoutOptions.End,
+    HorizontalOptions = LayoutOptions.Center,
+    Orientation = StackOrientation.Horizontal,
+    Children = { red, yellow, green }
+};
 ```
 
 #### Link

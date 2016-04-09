@@ -22,6 +22,9 @@ namespace Intro
 
 			Content = new StackLayout { 
 				Spacing = 10,
+				VerticalOptions = LayoutOptions.End,
+				HorizontalOptions = LayoutOptions.Center,
+				Orientation = StackOrientation.Horizontal,
 				Children = { red, yellow, green }
 			};
 		}
