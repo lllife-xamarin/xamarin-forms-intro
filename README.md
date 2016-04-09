@@ -1,17 +1,14 @@
-### Create solution
+### สร้าง Solution
 
-- Multiplatform -> Xamarin.Forms -> Forms App (C#/F#)
+- `Multiplatform` -> `Xamarin.Forms` -> `Forms App (C#/F#)`
 
+###  เขียน `ContentPage` ด้วย CSharp
 
-### Create `ContentPage` with CSharp
-
-`StackLayoutExample.cs`
+- ไฟล์ `StackLayoutExample.cs`
 
 ```csharp
-public class StackLayoutExample : ContentPage
-{
-    public StackLayoutExample ()
-    {
+public class StackLayoutExample : ContentPage {
+    public StackLayoutExample () {
         Padding = new Thickness (20);
         var red = new Label {
             Text = "Stop", BackgroundColor = Color.Red, FontSize = 20
@@ -25,7 +22,7 @@ public class StackLayoutExample : ContentPage
             Text = "Go", BackgroundColor = Color.Green, FontSize = 20
         };
 
-        Content = new StackLayout { 
+        Content = new StackLayout {
             Spacing = 10,
             Children = { red, yellow, green }
         };
@@ -33,27 +30,16 @@ public class StackLayoutExample : ContentPage
 }
 ```
 
-### Link
-
-- https://developer.xamarin.com/guides/xamarin-forms/getting-started/introduction-to-xamarin-forms
-
-`Intro.cs`
+- ไฟล์ `Intro.cs`
 
 ```csharp
-public class App : Application
-{
-    public App ()
-    {
-        // The root page of your application
-        var content = new ContentPage {
-            Content = new Label {
-                Text = "Hello, Form!",
-                VerticalOptions = LayoutOptions.CenterAndExpand,
-                HorizontalOptions = LayoutOptions.CenterAndExpand
-            }
-        };
-
+public class App : Application {
+    public App () {
         MainPage = new NavigationPage (new StackLayoutExample());
     }
 }
 ```
+
+### Link
+
+- https://developer.xamarin.com/guides/xamarin-forms/getting-started/introduction-to-xamarin-forms
