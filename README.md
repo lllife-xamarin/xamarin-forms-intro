@@ -1,8 +1,8 @@
-### สร้าง Solution
+#### สร้าง Solution
 
 - `Multiplatform` -> `Xamarin.Forms` -> `Forms App (C#/F#)`
 
-###  เขียน `ContentPage` ด้วย CSharp
+####  เขียน `ContentPage` ด้วย `C#`
 
 - ไฟล์ `StackLayoutExample.cs`
 
@@ -40,6 +40,6 @@ public class App : Application {
 }
 ```
 
-### Link
+#### Link
 
 - https://developer.xamarin.com/guides/xamarin-forms/getting-started/introduction-to-xamarin-forms
